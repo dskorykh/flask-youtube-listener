@@ -28,7 +28,7 @@
 
                 axios({
                     method: 'post',
-                    url: 'http://10.84.113.245:2000/api/video',
+                    url: '/api/video',
                     data: await this.player.getDuration(),
                     headers: headers
                 });
@@ -41,7 +41,7 @@
 
                 axios({
                     method: 'post',
-                    url: 'http://10.84.113.245:2000/api/video_state',
+                    url: '/api/video_state',
                     data:  {
                         video_name: 'kek',
                         current_time: time,
